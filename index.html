@@ -283,34 +283,57 @@
                     </article>
                     <!--//col5-->
                     <article class="column col6">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이 곳은 설명 부분입니다.</p>
-                        <!-- -->
-                        <!-- -->
+                        <h4 class="col_tit">Video</h4>
+                        <p class="col_desc">반응형 영상을 보여주는 영역입니다.</p>
+                        <!-- video -->
+                        <!--방법1-->
+                        <!--<video autoplay="autoplay" controls="controls" loop="loop">
+                            <source src="images/video.mp4">
+                        </video>-->
+                        <!--방법2-->
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/4GqnbAltxMU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!-- //video -->
                     </article>
                     <!--//col6-->
                 </section>
                 <section id="cont_right">
                     <h3 class="ir_su">반응형 사이트 오른쪽 컨텐츠</h3>
                     <article class="column col7">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이 곳은 설명 부분입니다.</p>
-                        <!-- -->
-                        <!-- -->
+                        <h4 class="col_tit">Effect1</h4>
+                        <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                        <!-- side1 -->
+                        <div class="side1">
+                            <figure>
+                                <img src="images/side1.jpg" alt="이미지1">
+                            </figure>
+                        </div>
+                        <!-- //side1 -->
                     </article>
                     <!--//col7-->
                     <article class="column col8">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이 곳은 설명 부분입니다.</p>
-                        <!-- -->
-                        <!-- -->
+                        <h4 class="col_tit">Effect2</h4>
+                        <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                        <!-- side2 -->
+                        <div class="side2">
+                            <figure>
+                                <img src="images/side2.jpg" alt="이미지2">
+                            </figure>
+                        </div>
+                        <!-- //side2 -->
                     </article>
                     <!--//col8-->
                     <article class="column col9">
-                        <h4 class="col_tit">Title</h4>
-                        <p class="col_desc">이 곳은 설명 부분입니다.</p>
-                        <!-- -->
-                        <!-- -->
+                        <h4 class="col_tit">Effect3</h4>
+                        <p class="col_desc">CSS의 transform을 이용한 마우스 오버효과입니다.</p>
+                        <!-- side3 -->
+                        <div class="side3">
+                            <figure>
+                                <img src="images/side3.jpg" alt="이미지3">
+                            </figure>
+                        </div>
+                        <!-- //side3 -->
                     </article>
                     <!--//col9-->
                 </section>
@@ -321,7 +344,24 @@
     
     <footer id="footer">
        <div class="container">
-           <h2>반응형 사이트 푸터</h2>  
+           <div class="row">
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영원칙</a></li>
+                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시중단요청서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address>
+                        Copyright ©
+                        <a href="http://webstoryboy.co.kr"><strong>webstoryboy</strong></a>
+                        All Rights Reserved.
+                    </address>
+                </div>
+            </div>
        </div>
     </footer>
     <!--footer-->
@@ -332,8 +372,38 @@
     <script src="js/slick.min.js"></script>
     <script src="js/lightgallery-all.min.js"></script>
     <script>
+        //접기/펼치기
+        $(".btn").click(function(e){
+            e.preventDefault();
+            /*버튼을 클릭했을 때, a태그 href 때문에 위로 올라가는 것을 막기위함*/
+            $(".nav").slideToggle();
+            $(".btn").toggleClass("open");
+            /*버튼을 클릭하면 .btn의 클래스가 class="btn open"으로 open 생성, 다시 클릭하면 open클래스 없어짐*/
+            if($(".btn").hasClass('open')){
+                //open이 있을 때
+                $(".btn").find("i").attr("class","fa fa-angle-up");
+                /*i태그를 찾아 속성을 변경*/
+            }else{
+                //open이 없을 때
+                $(".btn").find("i").attr("class","fa fa-angle-down");   
+            }
+        });
+        
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            if(wWidth>600){
+                $(".nav").removeAttr("style");
+            }
+        });
+        /*버튼을 클릭해서 메뉴가 보여진 상태에서 크기를 줄이면 메뉴가 없어져야하는데 안없어짐. nav태그 안에 style속성(display="block")이 우선순위가 높아서 display="none"이 안먹힘, 따라서 사이즈가 600 이하일때, nav의 스타일 속성을 제거*/ 
+        
         //라이트 박스
-        $(".lightbox").lightGallery();
+        $(".lightbox").lightGallery({
+            thumbnail: true,
+            autoplay: true,
+            pause: 3000,
+            progressBar: true
+        });
         //이미지 슬라이더
         $(".slider").slick({
 			dots: true,

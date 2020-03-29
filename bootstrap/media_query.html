@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>01_CSS를 활용한 반응형 웹 코딩</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		*{padding:0;margin:0}
+		body{
+			background:pink;
+		}
+		#wrapper{
+			border:1px solid gray;
+			width:80%;
+			margin:0 auto;
+			font-size:2vw
+		}
+		nav ul{
+			overflow:hidden;	
+		}
+		nav li{
+			list-style:none;
+			float:left;
+			border:1px solid gray;
+			width:20%;
+			box-sizing:border-box;
+			text-align:center;
+		}
+		header h1{
+			text-align:center;
+			margin-bottom:20px
+		}
+		header{
+			padding:20px 0 0 0;
+			border:1px solid gray;
+		}
+		.content{
+			padding:10px;
+		}
+		footer{
+			border:1px solid gray;
+			height:100px;
+			line-height:100px;
+			text-align:center;
+		}
+		@media (max-width:767px){
+			body{
+				background:purple;
+			}
+			#wrapper{
+				width:100%;
+			}
+			nav li{
+				width:100%;
+			}
+		}
+		@media (min-width:768px){
+			body{
+				background:orange;
+			}
+			#wrapper{width:100%;}
+		}
+
+		@media (min-width:992px){
+			body{
+				background:lightblue;
+			}
+			#wrapper{width:80%;}
+		}
+		@media (min-width:1200px){
+			body{
+				background:#85F1B9;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>반응형 웹</h1>
+			<nav>
+				<ul>
+					<li>menu1</li>
+					<li>menu2</li>
+					<li>menu3</li>
+					<li>menu4</li>
+					<li>menu5</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content">
+			<h2>반응형 웹은 미디어쿼리를 사용하여 스타일링합니다.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ducimus quos dolor quam? Voluptatum, expedita officiis fugit at porro dolorem sed nobis ipsam quos dolore nemo, veniam maxime alias quo.</p>
+		</div>
+		<footer>
+			<h1>designed by jw</h1>
+		</footer>
+	</div>
+</body>
+</html>

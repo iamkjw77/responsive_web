@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>14. 폼태그 스타일 selfEX</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+       .container{
+        background: orange;
+        padding: 50px 100px;
+       }
+    </style>
+  </head>
+  <body>
+    <div class="container img-rounded">
+      <div class="row">
+        <div class="col-xs-12">
+          <form>
+            <div class="form-group has-success has-feedback">
+              <label for="uemil" class="control-label">Email address</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="email" name="uemil" class="form-control" id="uemil" placeholder="E-mail 주소를 입력해주세요." aria-describedby="inputSuccessStatus" />
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputSuccessStatus" class="sr-only">Email address</span>
+            </div>
+
+            <div class="form-group has-error has-feedback">
+              <label for="upwd" class="control-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                </span>
+                <input type="password" name="upwd" class="form-control" id="inputErrorStatus" placeholder="비밀번호를 입력해주세요." />
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputErrorStatus" class="sr-only">Password</span>
+            </div>
+
+            <div class="form-group">
+              <label for="ufile">file input</label>
+              <input type="file" name="ufile">
+            </div>
+
+            <input class="btn btn-default" type="submit" value="submit" />
+          </form>
+        </div>
+
+        <div class="col-xs-12">
+          <form class="form-inline">
+            <div class="form-group has-success has-feedback">
+              <label for="uemil" class="control-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-user"></span>
+                </span>
+                <input type="email" name="uemil" class="form-control" id="uemil" placeholder="E-mail" aria-describedby="inputSuccessStatus" />
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputSuccessStatus" class="sr-only">Email address</span>
+            </div>
+
+            <div class="form-group has-error has-feedback">
+              <label for="upwd" class="control-label">Password</label>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-lock"></span>
+                </span>
+                <input type="password" name="upwd" class="form-control" id="inputErrorStatus" placeholder="비밀번호" />
+              </div>
+              <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+              <span id="inputErrorStatus" class="sr-only">Password</span>
+            </div>
+
+            <div class="form-group">
+              <label for="ufile">file</label>
+              <input type="file" name="ufile">
+            </div>
+
+            <input class="btn btn-default" type="submit" value="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

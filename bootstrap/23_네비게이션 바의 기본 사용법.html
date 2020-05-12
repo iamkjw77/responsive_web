@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>23.네비게이션 바의 기본 사용법</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      body{padding-top:70px}
+      .navbar-brand img{width:100px}
+      .navbar-text{margin-right:100px}
+      .container-fluid .row p{font-size:2em}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.jpg" alt="9pixelstudio">
+          </a>
+          <p class="navbar-text"><a href="#" class="navbar-link">9pixelstudio</a>는 최고의 서비스를 제공합니다.</p>
+        </div> <!--작은 화면일 때 나타나는 토글 버튼 -->
+        
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#book">디자인북 작업</a></li>
+            <li><a href="#video">동영상 작업</a></li>
+            <li><a href="#web">웹 페이지 작업</a></li>
+            <li><a href="#ad">광고 이미지 작업</a></li>
+            <!-- <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li> -->
+          </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <!-- <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul> -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid">
+      <div class="row" id="book">
+        <div class="col-xs-4"><p>디자인북 작업Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam laborum, alias, quisquam quidem ab quod itaque voluptas culpa nesciunt inventore iste similique a deleniti error debitis sint dicta necessitatibus doloribus ad. Magni magnam natus laborum iusto facilis id, blanditiis vitae modi inventore necessitatibus! Ex ratione necessitatibus amet, architecto vel praesentium?</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eaque odio, nesciunt iusto dolore vitae beatae cumque dolores aliquid, quibusdam sunt unde fugit! Qui maiores, odit ipsum error accusantium fugiat quis impedit repellat ullam minima? Dignissimos aliquam odio voluptatum sit ratione eaque repudiandae architecto eligendi laudantium temporibus, magni, est voluptas.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora fugit hic iusto officia repudiandae quas similique architecto sed fugiat doloribus magni natus animi modi, corrupti harum est illo. Ratione cumque sint vel maiores deserunt asperiores saepe, enim perspiciatis! Id itaque alias accusamus, repellendus adipisci dolores iste expedita. Tenetur eius, facere.</p></div>
+      </div>
+      <div class="row" id="video">
+        <div class="col-xs-4"><p>동영상 작업Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ad possimus laboriosam eaque sapiente, fugiat, sint sunt id dicta voluptatem odit exercitationem expedita reprehenderit quidem consequuntur ipsa ut animi distinctio aliquam iusto. At quos facere, ipsum placeat dolorum, similique excepturi autem officia, eaque expedita amet tempore architecto non, accusantium numquam.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat voluptatibus fugiat odio quo deserunt nulla ab animi impedit itaque sint. Praesentium inventore repellendus quia consectetur est voluptas alias expedita vero, quaerat animi fugiat aliquam, ducimus, temporibus amet laborum quidem necessitatibus earum similique deleniti. Illum temporibus, fugit exercitationem quibusdam a error.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione excepturi velit culpa earum qui vel placeat, adipisci vitae itaque, dolor maxime iusto nulla laboriosam explicabo iste! Blanditiis culpa molestias inventore cupiditate excepturi, magnam eos ipsum autem dicta voluptate consectetur, dolore, a veniam assumenda dolorum ab tempore, illum rem rerum magni.</p></div>
+      </div>
+      <div class="row" id="web">
+        <div class="col-xs-4"><p>웹 페이지 작업Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia porro ad aspernatur, maxime ratione. Ad sint dignissimos, cum atque aut ullam, ratione omnis nostrum ipsa id consequuntur accusantium vitae minima aperiam voluptatem qui ea saepe corporis reprehenderit sequi quia repellat quae nulla incidunt. Eos iste, labore tenetur quae aperiam voluptas.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sit est tempore architecto blanditiis maxime, molestiae possimus voluptatum ratione accusamus harum, aut provident commodi qui quia laboriosam temporibus recusandae sunt reiciendis! Nisi corrupti, minima laboriosam natus dolorem reiciendis molestias velit reprehenderit, fuga dignissimos iure possimus voluptatem quaerat, consectetur eligendi nostrum.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident animi quasi blanditiis perferendis neque, voluptatibus tempora consectetur laborum a voluptates modi! Nobis asperiores alias aliquid, culpa pariatur excepturi laudantium similique incidunt ab eaque fuga quis laboriosam esse tempore consequatur quaerat reprehenderit. Fugiat, eos repellat corporis cupiditate quis fugit non.</p></div>
+      </div>
+      <div class="row" id="ad">
+        <div class="col-xs-4"><p>광고 이미지 작업Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur dignissimos cupiditate nesciunt quam sit distinctio minus eos repellendus laudantium ipsum mollitia, modi neque id praesentium totam eveniet adipisci possimus sequi quis, eius debitis voluptatum. Reiciendis, fugiat ad voluptatem laudantium dolorem illo deleniti fugit assumenda! Dicta ipsa, natus in sit consequuntur!</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit consectetur nihil sed culpa voluptas ex unde et dolores aut autem, eos suscipit, cupiditate veniam ab eligendi qui accusantium natus. Perspiciatis suscipit dolore, expedita voluptatum voluptatem, reprehenderit deserunt nemo numquam nisi tempora quas sint, dolorum! Architecto sequi aliquam voluptas natus voluptatum.</p></div>
+        <div class="col-xs-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia nihil molestiae dolore, corporis sunt iste possimus debitis sit eos similique ducimus consequuntur, quisquam harum. Inventore quia quaerat maxime dolorum dolore quae alias autem, modi consequatur, iure fugiat adipisci facilis omnis neque molestias hic eligendi quasi doloribus sunt libero reprehenderit eum.</p></div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </body>

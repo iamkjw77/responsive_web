@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title></title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- IE8 에서 HTML5 요소와 미디어 쿼리를 위한 HTML5 shim 와 Respond.js -->
+    <!-- WARNING: Respond.js 는 당신이 file:// 을 통해 페이지를 볼 때는 동작하지 않습니다. -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <button class="btn_all">컨텐츠 toggle</button>
+    <button class="btn_show">컨텐츠 show</button>
+    <button class="btn_hide">컨텐츠 hide</button>
+    <h1>Collapse</h1>
+    <a class="btn btn-default" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</button>
+    <div class="collapse" id="collapseExample">
+      <div class="well">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste et illum consequatur molestiae totam dolorum facere magni molestias porro autem!
+      </div>
+    </div>
+
+    <h1>Accordion</h1>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-info">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Collapsible Group Item #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates eum ut, excepturi natus dicta rerum perferendis ullam cupiditate reprehenderit optio earum enim beatae officia exercitationem, mollitia inventore sint labore quaerat!
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-primary">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates eum ut, excepturi natus dicta rerum perferendis ullam cupiditate reprehenderit optio earum enim beatae officia exercitationem, mollitia inventore sint labore quaerat!
+          </div>
+        </div>
+      </div>
+
+      <div class="panel panel-warning">
+        <div class="panel-heading" role="tab" id="headingThree">
+          <h4 class="panel-title">
+            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </a>
+          </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+          <div class="panel-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates eum ut, excepturi natus dicta rerum perferendis ullam cupiditate reprehenderit optio earum enim beatae officia exercitationem, mollitia inventore sint labore quaerat!
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script>
+      $(function(){
+        $(".btn_all").click(function(){
+          $(".collapse").collapse("toggle");
+        });
+
+        $(".btn_show").click(function(){
+          $(".collapse").collapse("show");
+        });
+
+        $(".btn_hide").click(function(){
+          $(".collapse").collapse("hide");
+        });
+
+        $(".collapse").on("hidden.bs.collapse", function(){
+          alert("콘텐츠가 숨겨짐!");
+        });
+      });
+    </script>
+  </body>

@@ -1,0 +1,28 @@
+/*skip menu*/
+#skip{position: relative}
+#skip a{position: absolute;left: 0;top: -100px;width: 140px;line-height: 30px;border: 1px solid #fff;color: #fff;text-align: center;background: #333}
+#skip a:active,
+#skip a:focus{top: 0;}
+
+/*레이아웃*/
+#m_gnb_wrap{display: none}
+#header{width:100%; background:#fff; border-bottom: 1px solid #c6c6c6;margin-top:20px}
+
+/*가운데 영역*/
+.container{width:1280px;margin: 0 auto}
+
+/*헤더 영역*/
+.header h1{float: left;margin-right: 100px}
+.header h1 a{display: block;width: 200px;height: 50px}
+.header img{width:230px;}
+.header .btn_gnb{display: none}
+
+.header .search_wrap{float: left;background: #b70000;width: 40%;margin-top: 5px}
+.header .search_field{position: relative;}
+.header .search_field .btn{width:40px;height: 40px;background: url(../img/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
+.header .txt_search{background: #fff;width:85%;padding:10px;margin: 2px}
+
+.header .utill_list li{float: left}
+
+.header .pc_gnb_wrap{clear: both}
+.header .m_gnb_wrap{display: none}

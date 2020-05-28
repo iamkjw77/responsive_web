@@ -17,31 +17,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     
     <!--bootstrap-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
         <script src="js/html5shiv.min.js"></script>
         <script type="text/javascript">
-            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 최신 브라우저로 업데이트해주세요!");
+            alert("현재 당신이 보는 브라우저는 지원하지 않습니다. 크롬브라우저를 추천합니다!");
         </script>
     <![endif]-->
-    <style>
-        #bs-example-navbar-collapse-1 ul{height:88px;padding:22px 15px 15px 15px}
-        a.navbar-brand, .navbar-header{height:88px;}
-        
-    </style>
 </head>
 <body>
+    <!--skip menu-->
+    <div id="skip">
+        <a rel="bookmark" href="#free_think">프리띵크</a>
+        <a rel="bookmark" href="#hot_think">핫띵크</a>
+        <a rel="bookmark" href="#real_think">리얼띵크</a>
+        <a rel="bookmark" href="#customer_sevice">고객지원</a>
+    </div>
+    <!--//skip menu-->
+    
     <header id="header">
         <div class="container">
-            
+            <div class="row">
+                <div class="header clearfix">
+                    <h1>
+                        <a href="#">
+                            <img src="./img/logo2.png" alt="HotThink">
+                        </a>
+                    </h1>
+                    <button type="button" class="btn_gnb">메인메뉴 열기</button>
+                    <button type="button" class="btn_gnb">검색영역 펼치기</button>
+                    <div class="search_wrap">
+                        <span class="ir_so">검색</span>
+                        <div class="search_field">
+                            <input type="text" class="txt_search" title="검색어 입력" placeholder="당신의 생각을 검색해보세요!">
+                            <button class="btn" type="button">
+                                <span>검색버튼</span>
+                            </button>
+                            <form>
+                                <input type="hidden">
+                            </form>
+                        </div>
+                        <button type="button" class="btn_gnb">검색영역닫기</button>
+                    </div>
+                    <ul class="utill_list">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                    <div id="pc_gnb_wrap">
+                        <div class="gnb_wrap">
+                            <nav class="pc_gnb">
+                                <ul>
+                                    <li><a href="#">프리띵크</a></li>
+                                    <li><a href="#">핫띵크</a></li>
+                                    <li><a href="#">리얼띵크</a></li>
+                                    <li><a href="#">고객지원</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                    <div id="m_gnb_wrap">
+                        <div class="gnb_wrap">
+                            <nav class="m_gnb">
+                                <div class="gnb_top">
+                                   <a href="#">로그인</a>
+                                   <a href="#">회원가입</a>
+                                </div>
+                                <ul>
+                                    <li><a href="#">프리띵크</a></li>
+                                    <li><a href="#">핫띵크</a></li>
+                                    <li><a href="#">리얼띵크</a></li>
+                                    <li><a href="#">고객지원</a></li>
+                                </ul>
+                                <button type="메인메뉴 닫기"></button>
+                            </nav>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </header>
 </body>
 
 <!-- bootstrap js, jQuery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </html>

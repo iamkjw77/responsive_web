@@ -31,5 +31,5 @@
 
 .header .pc_gnb{clear: both;width: 100%;}
 .header .pc_gnb li{float: left;background:#b70000;width: 20%;height:58px}
-
+.header .pc_gnb li a{color: #fff;display: block;font-size: 18px}
 .header .m_gnb_wrap{display: none}

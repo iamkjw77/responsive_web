@@ -12,13 +12,10 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     
     <!--web font-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-    
-    <!--bootstrap-->
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 
     <!-- HTLM5shiv ie6~8 -->
     <!--[if lt IE 9]> 
@@ -38,13 +35,14 @@
     </div>
     <!--//skip menu-->
     
+    <!--header-->
     <header id="header">
         <div class="header clearfix">
             <div class="container">
                 <div class="row">
                     <h1>
                         <a href="#">
-                            <img src="./img/logo3.png" alt="HotThink">
+                            <img src="./images/logo3.png" alt="HotThink">
                         </a>
                     </h1>
                     <button type="button" class="btn_gnb">메인메뉴 열기</button>
@@ -103,9 +101,56 @@
             </div>
         </div>
     </header>
+    <!--//header-->
+    
+    <!--section01-->
+    <section id="section_01">
+        <div class="slider">
+            <h2 class="ir_so">핫띵크 메인이미지</h2>
+            <div class="swiper-container big_slider">
+                <div class="swiper-wapper slide_wrap">
+                    <div class="swiper-slide img01"></div>
+                    <div class="swiper-slide img02"></div>
+                    <!--custom-->
+                    <div class="slider_pager slide_wrap">
+                        <div class="slide_inner">
+                            <span class="prev pager">
+                                <xi class="xi-angle-left-thin xi-2x"></xi>
+                            </span>
+                            <span class="next pager">
+                                <xi class="xi-angle-right-thin xi-2x"></xi>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="slider_pageNation">
+                        <div class="inner">
+                            <ul class="slider_pageNation"></ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <!--//section-->
+    
+    <!--javascript library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container',{
+            direction: 'horizontal',
+            loop:true,
+            navigation: {
+                nextE1: '.slider_pagers .next',
+                prevE1: '.slider_pagers .prev'
+            },
+            pagination: {
+                e1: '.slider_pageNation'
+            }
+        })
+    </script>
 </body>
-
-<!-- bootstrap js, jQuery-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </html>

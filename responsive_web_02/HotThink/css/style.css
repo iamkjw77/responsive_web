@@ -22,15 +22,24 @@
 .header .search_wrap{float: left;background: #b70000;width:45%;height:44px;margin-top: 21px;margin-right: 100px}
 .header .search_field{}
 .header .txt_search{background: #fff;width: 88%;height: 20px;font-size: 15px;padding: 10px;margin:2px 2px 0 2px}
-.header .search_field .btn{width:35px;height: 35px;background: url(../img/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
+.header .search_field .btn{width:35px;height: 35px;background: url(../images/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
 
 
 .header .utill_list li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
-.header .utill_list .util_01{background: url(../img/login_icon.png) no-repeat center top;margin-right: 20px}
+.header .utill_list .util_01{background: url(../images/login_icon.png) no-repeat center top;margin-right: 20px}
 .header .utill_list .util_01 a, .header .utill_list .util_02 a{padding-top: 33px}
-.header .utill_list .util_02{background: url(../img/sign_in_icon.png) no-repeat center top}
+.header .utill_list .util_02{background: url(../images/sign_in_icon.png) no-repeat center top}
 
-.header .pc_gnb{clear: both;width: 100%;}
-.header .pc_gnb li{float: left;background:#b70000;width: 20%;height:55px;text-align: center;line-height: 4.2em}
+.header .gnb_wrap{clear: both;width: 100%;background: #b70000;height: 55px;}
+.header .pc_gnb{width: 1280px;margin: 0 auto}
+.header .pc_gnb li{float: left;width: 25%;height:55px;text-align: center;line-height: 4.2em;background: url(../images/nav_divider.png) no-repeat right center}
 .header .pc_gnb li a{color: #fff;display: block;font-size: 17px}
 .header .m_gnb_wrap{display: none}
+
+/*슬라이더*/
+
+.big_slider{width: 100%;height: 500px;position: relative;overflow: hidden}
+.big_slider .slide_wrap{height: 100%;width: 100%;}
+.slider .img1{background: url(../images/main_image_01.png) no-repeat center center/cover}
+.slider .img2{background: url(../images/main_image_02.png) no-repeat center center/cover}
+

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.css">
     
     <!--web font-->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -106,44 +106,40 @@
     <!--section01-->
     <section id="section_01">
         <div class="slider">
-            <h2 class="ir_so">핫띵크 메인이미지</h2>
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide img01">
-                        <img src="./images/main_image_01.png" alt="">
-                    </div>
-                    <div class="swiper-slide img02">
-                        <img src="./images/main_image_01.png" alt="">
-                    </div>
-                    
-                    <!--custom-->
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-stop">정지</div>
+                    <div class="swiper-slide ss1"></div>
+                    <div class="swiper-slide ss2"></div>
                 </div>
-                
+                <!--custom-->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-stop">정지</div>
             </div>
         </div>
-        
     </section>
     <!--//section-->
     
+    
+    
+    
     <!--javascript library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
+            // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
             },
+            // pagination
             pagination: {
-                el: '.swiper-pagination',
-                type: 'bullets',
+              el: '.swiper-pagination',
             },
             autoplay: {
-                delay: 5000,
+              delay: 3000,  
             },
         });
     </script>

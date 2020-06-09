@@ -32,7 +32,7 @@
 
 .header .gnb_wrap{clear: both;width: 100%;background: #b70000;height: 55px;}
 .header .pc_gnb{width: 1280px;margin: 0 auto}
-.header .pc_gnb li{float: left;width: 25%;height:55px;text-align: center;line-height: 4.2em;background: url(../images/nav_divider.png) no-repeat right center}
+.header .pc_gnb li{float: left;width: 20%;height:55px;text-align: center;line-height: 4.2em;background: url(../images/nav_divider.png) no-repeat right center}
 .header .pc_gnb li a{color: #fff;display: block;font-size: 17px}
 .header .m_gnb_wrap{display: none}
 
@@ -41,5 +41,26 @@
 .slider .ss1{background: url(../images/main_image_01.jpg) no-repeat center center;background-size: cover}
 .slider .ss2{background: url(../images/main_image_02.jpg) no-repeat center center;background-size: cover}
 
+/*핫띵크*/
+.hotThink{padding: 80px 0}
+.hotThink_title{margin-bottom: 60px}
+.hotThink_title ul{overflow: hidden;width: 636px;margin: 0 auto}
+.hotThink_title li{float: left;width: 210px;text-align: center;border: 1px solid #c4c4c4;margin-right: -1px;}
+.hotThink_title li a{display: block;padding: 15px 0;font-size: 18px;color: #666;font-weight: 700}
+.hotThink_title li.active a{background: #666;color:#fff}
+
+.hotThink_chart{overflow: hidden}
+.hotThink_chart > div > div > div{float:left;width: 292px;margin-right: 18px}
+.hotThink_chart > div > div > div:last-child{margin-right: 0}
+.hotThink_chart > div > div > div .repre_img{position: relative}
+.hotThink_chart > div > div > div .repre_img img{display: block}
+.hotThink_chart > div > div > div .repre_img .rank{position: absolute;top: 17px;left: 0;width: 50px;height: 50px;font-size: 22px;box-shadow: 3px 3px 3px rgba(0,0,0,0.5);line-height: 50px;background: #b70000;text-align: center}
+.hotThink_chart > div > div > div .repre_img .rank strong{color: #fff;text-shadow: 2px 2px 3px rgba(0,0,0,1);}
+
+.hotThink_chart > div > div > div .info{background: #fff;padding: 17px;border:1px solid #d9d9d9;}
+.info_good{display: inline-block}
+.hotThink_chart > div > div > div .info_good .good_count{padding-left: 35px; background: url(../images/good_icon.png) no-repeat;display: inline-block;height: 30px;font-weight: 700;font-size: 18px}
+.info_hits{display: inline-block;float: right;color: #9a9a9a;line-height: 30px}
+.hits_rate{font-size:15px}
 
 

@@ -73,7 +73,7 @@
 .section_03 h2 em{color: #b70000;font-size: 40px}
 .section_03 article{float: left;width: 47%;margin-right: 3%;height: 350px;}
 .section_03 article:last-child{margin-right: 0;margin-left: 3%}
-.section_03 article > div{border: 1px solid #ccc;height: 350px;}
+.section_03 article > div{border: 1px solid #a4a4a4;height: 350px;}
 .section_03 article.box_02{margin-right: 0;}
 .section_03 article h3{font-size: 30px;margin-bottom: 10px;font-family: 'Do Hyeon', sans-serif;padding-left: 10px}
 .section_03 article h3 em{color: #b70000;font-family: 'Do Hyeon', sans-serif;}

@@ -5,15 +5,20 @@
 #skip a:focus{top: 0;}
 
 /*레이아웃*/
+#header{width:100%; background:#fff; border-bottom: 1px solid #c6c6c6;padding-top: 15px}
 #m_gnb_wrap{display: none}
-#header{width:100%; background:#fff; border-bottom: 1px solid #c6c6c6;margin-top:20px;}
 #section_01{clear: both}
-/*가운데 영역*/
-.container{width:1280px;margin: 0 auto;height: 100px}
+#section_03{background: #f2f4f7}
+#footer{background: #211f1f;}
 
+/*가운데 영역*/
+.container{position: relative;width:1280px;margin: 0 auto;background: rgba(0,0,0,0)}
+
+/* 로우 영역 */
+.header_row{height: 100px;}
 
 /*헤더 영역*/
-.header clearfix{}
+.fixed_active{position: fixed;top: 0;z-index: 9999}
 .header h1{float: left;margin-right: 80px}
 .header h1 a{display: block;width: 306px;height: 79px}
 .header img{width:306px;}
@@ -23,7 +28,6 @@
 .header .search_field{}
 .header .txt_search{background: #fff;width: 88%;height: 20px;font-size: 15px;padding: 10px;margin:2px 2px 0 2px}
 .header .search_field .btn{width:35px;height: 35px;background: url(../images/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
-
 
 .header .utill_list li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
 .header .utill_list .util_01{background: url(../images/login_icon.png) no-repeat center top;margin-right: 20px}
@@ -63,4 +67,39 @@
 .info_hits{display: inline-block;float: right;color: #9a9a9a;line-height: 30px}
 .hits_rate{font-size:15px}
 
+/*box*/
+.section_03{overflow: hidden;padding:80px 0 120px 0}
+.section_03 h2{text-align: center; font-size: 35px;font-family: 'Do Hyeon', sans-serif;}
+.section_03 h2 em{color: }
+.section_03 article{float: left;width: 46%;margin-right: 4%;height: 350px;}
+.section_03 article:last-child{margin-right: 0;margin-left: 4%}
+.section_03 article > div{border: 1px solid #ccc;height: 350px;}
+.section_03 article.box_02{margin-right: 0;}
+.section_03 article h3{font-size: 30px;font-weight: 700;margin-bottom: 20px;}
+.section_03 article h3 em{color: #b70000;font-weight: 900}
 
+
+/*실시간 판매완료,후기*/
+.box_cont{padding: 17px}
+.box_cont ul li{position: relative;border-bottom: 1px solid #d7d7d7;padding: 10px;margin-bottom: 10px;min-height: 20px;box-sizing: border-box}
+.box_cont ul li span{display: block;font-size: 14px;color: #777;font-weight: 300;}
+
+
+
+/*푸터*/
+.footer_sns{position: absolute; right: 17px; top: 33px; z-index: 1;}
+.footer_sns ul{text-align: center;}
+.footer_sns li{display: inline;margin: 0 2px}
+.footer_sns li a{background:#8f8f8f;border-radius: 50%;width: 40px;height: 40px;color: #000;display: inline-block;font-size: 25px;line-height: 37px;position: relative;}
+.footer_sns .tel{text-align: center;padding-top: 5px}
+.footer_sns .tel a{color: #8f8f8f;font-size: 21px}
+.footer_sns .tel a em{color: #fff}
+
+.footer_info{padding: 40px 0;width: 80%}
+.footer_info h2 img{width: 150px;}
+.footer_info ul{padding: 15px 0}
+.footer_info li{position: relative;display: inline;padding-right: 16px;white-space: nowrap}
+.footer_info li:after{content:"";position: absolute;right: 5px;top: 5px;width: 1px;height: 11px;background: #8f8f8f}
+.footer_info li:last-child:after{width: 0;height: 0;}
+.footer_info li a{color: #8f8f8f}
+.footer_info address p{color: #8f8f8f;padding-bottom: 15px}

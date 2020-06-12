@@ -29,10 +29,18 @@
 .header .txt_search{background: #fff;width: 88%;height: 20px;font-size: 15px;padding: 10px;margin:2px 2px 0 2px}
 .header .search_field .btn{width:35px;height: 35px;background: url(../images/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
 
+/*로그인 전*/
+.header .utill_list{display: none}
 .header .utill_list li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
 .header .utill_list .util_01{background: url(../images/login_icon.png) no-repeat center top;margin-right: 20px}
 .header .utill_list .util_01 a, .header .utill_list .util_02 a{padding-top: 33px}
 .header .utill_list .util_02{background: url(../images/sign_in_icon.png) no-repeat center top}
+
+/*로그인 후*/
+.header .utill_list_login li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
+.header .utill_list_login .util_01{background: url(../images/logout_icon.png) no-repeat center top;margin-right: 20px}
+.header .utill_list_login .util_01 a, .header .utill_list .util_02 a{padding-top: 33px}
+.header .utill_list_login .util_02{background: url(../images/mypage_icon.png) no-repeat center top}
 
 .header .gnb_wrap{clear: both;width: 100%;background: #b70000;height: 55px;}
 .header .pc_gnb{width: 1280px;margin: 0 auto}

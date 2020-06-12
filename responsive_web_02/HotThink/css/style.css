@@ -19,33 +19,39 @@
 
 /*헤더 영역*/
 .fixed_active{position: fixed;top: 0;z-index: 9999}
-.header h1{float: left;margin-right: 80px}
+.header h1{float: left;margin-right: 50px}
 .header h1 a{display: block;width: 306px;height: 79px}
 .header img{width:306px;}
 .header .btn_gnb{display: none}
 
-.header .search_wrap{float: left;background: #b70000;width:45%;height:44px;margin-top: 21px;margin-right: 100px}
+.header .search_wrap{float: left;background: #b70000;width:45%;height:44px;margin-top: 21px;margin-right: 30px}
 .header .search_field{}
 .header .txt_search{background: #fff;width: 88%;height: 20px;font-size: 15px;padding: 10px;margin:2px 2px 0 2px}
-.header .search_field .btn{width:35px;height: 35px;background: url(../images/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;}
+.header .search_field .btn{width:35px;height: 35px;background: url(../images/search_icon.png) no-repeat;background-size:cover;text-indent: -9999px;cursor: pointer}
 
 /*로그인 전*/
 .header .utill_list{display: none}
+.header .utill_list{float: right}
 .header .utill_list li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
 .header .utill_list .util_01{background: url(../images/login_icon.png) no-repeat center top;margin-right: 20px}
-.header .utill_list .util_01 a, .header .utill_list .util_02 a{padding-top: 33px}
+.header .utill_list .util_01 a, .header .utill_list .util_02 a{padding-top: 33px;}
 .header .utill_list .util_02{background: url(../images/sign_in_icon.png) no-repeat center top}
 
 /*로그인 후*/
+/*.header .utill_list_login{display: none}*/
+.header .utill_list_login{float: right}
 .header .utill_list_login li{float: left;padding-top: 33px;font-size: 15px;margin-top: 20px}
+.header .utill_list_login .user{font-size: 16px;margin:0 20px 0 0}
+.header .utill_list_login .user_name{font-weight: 600;}
 .header .utill_list_login .util_01{background: url(../images/logout_icon.png) no-repeat center top;margin-right: 20px}
-.header .utill_list_login .util_01 a, .header .utill_list .util_02 a{padding-top: 33px}
+.header .utill_list_login .util_01 a, .header .utill_list_login .util_02 a{padding-top: 33px}
 .header .utill_list_login .util_02{background: url(../images/mypage_icon.png) no-repeat center top}
 
 .header .gnb_wrap{clear: both;width: 100%;background: #b70000;height: 55px;}
 .header .pc_gnb{width: 1280px;margin: 0 auto}
 .header .pc_gnb li{float: left;width: 20%;height:55px;text-align: center;line-height: 4.2em;background: url(../images/nav_divider.png) no-repeat right center}
 .header .pc_gnb li a{color: #fff;display: block;font-size: 17px}
+.header .pc_gnb li a:hover{background: #fff;color: #b70000;font-weight: 600;border-top: 2px solid #b70000;}
 .header .m_gnb_wrap{display: none}
 
 /*슬라이드*/
@@ -109,4 +115,5 @@
 .footer_info li:after{content:"";position: absolute;right: 5px;top: 5px;width: 1px;height: 11px;background: #8f8f8f}
 .footer_info li:last-child:after{width: 0;height: 0;}
 .footer_info li a{color: #8f8f8f}
+.footer_info li a:hover{text-decoration: underline}
 .footer_info address p{color: #8f8f8f;padding-bottom: 15px}

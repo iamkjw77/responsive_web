@@ -24,7 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../완료/javascript/Basic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="SvnConfiguration">
@@ -39,6 +39,7 @@
       <updated>1592403387082</updated>
       <workItem from="1592403388188" duration="704000" />
       <workItem from="1592462763527" duration="3428000" />
+      <workItem from="1593067005908" duration="719000" />
     </task>
     <servers />
   </component>
